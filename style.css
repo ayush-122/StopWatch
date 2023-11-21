@@ -1,3 +1,4 @@
+/* reseting the default value of browser */
 *
 {
     margin:0;
@@ -5,27 +6,45 @@
    box-sizing: border-box;
    font-family: sans-serif;
 }
+/*styling heading*/
 h1 {
-    color: whitesmoke;
-    font-family:fantasy;
-    margin-bottom: 20px; /* Add margin at the bottom of the heading */
+    color: #2ecc71; /* Change the color to a shade of blue */
+    font-family: 'Pacifico', cursive; /* Change the font family to 'Pacifico' or any other preferred font */
+    font-weight: bolder;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
-body {
+
+ body
+ {
+    background: linear-gradient(to right, #1a1a1a, #000);
+ }
+/* making this flex so that we can center the container.*/
+.container-center {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center; /* Align items at the start (top) of the cross-axis */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 100vh;
+    margin-top: auto;
+     /* height: 75vh;  */
     width: 100vw;
-    background-color: black;
+    
 }
+
 
 .container {
-    height: 350px;
+    height: 300px;
     width: 400px;
-    /* margin-top: auto; Push the container to the center by pushing the top margin to auto */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .time-container
 {
@@ -33,6 +52,7 @@ body {
     font-size: 5rem;
     justify-content: space-around;
     height: 100px;
+    margin-top: 25px;
     color: whitesmoke
 }
 
@@ -43,13 +63,11 @@ body {
     height: 40px;
     color:wheat;
 }
-.hour ,.minute, .second
+.hour ,.minute, .second ,p
 {
     font-family:fantasy;
 }
-p{
-    font-family: fantasy;
-}
+
 
 .btn-container
 {
@@ -58,30 +76,37 @@ p{
     align-items: center;
 }
 
-.start-btn ,.stop-btn ,.reset-btn 
-{
-    width:60px;
-    height:30px;
+.start-btn, .stop-btn, .reset-btn {
+    width: 80px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-family: fantasy;
+    font-size: 1rem;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.start-btn{
+
+.start-btn {
     background-color: turquoise;
+    color: #fff;
 }
-.stop-btn{
+
+.stop-btn {
     background-color: red;
+    color: #fff;
 }
 
-.reset-btn{
+.reset-btn {
     background-color: orange;
+    color: #fff;
 }
-
-.disable
-{
+/*make cursor disable using javascript once button is clicked*/
+.disable {
     cursor: not-allowed;
     opacity: 0.6;
 }

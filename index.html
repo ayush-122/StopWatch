@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopWatch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+
 </head>
+
 <body>
-     <h1> Tick-Tock Mastery: Your Stopwatch Hub</h1>
-    <div class="container">
-        <div class="time-container">
-            <div class="hour">00 :</div>
-            <div class="minute">00 :</div>
-            <div class="second"> 00</div>
-        </div>
+    <!--  heading -->
+    <h1> Tick-Tock Mastery: Your Stopwatch Hub</h1>
+    <!-- container-center will help us to put our container in the center as we need to made alway parent div
+    as flex
+    -->
+    <div class="container-center">
+          <!-- container div will container all div like timer text and button div -->
+        <div class="container">
 
-        <div class="text-container">
-            <p>Hours</p>
-            <p>Minute</p>
-            <p>Seconds</p>
-        </div> 
-
-        <div class="btn-container">
-            <div class="start-btn">Start</div>
-            <div class="stop-btn">Stop</div>
-            <div class="reset-btn">Reset</div>
+            <!-- time-container div will contains the time section -->
+            <div class="time-container">
+                <div class="hour">00 :</div>
+                <div class="minute">00 :</div>
+                <div class="second"> 00</div>
+            </div>
+            <!-- div class will contains the text-container -->
+            <div class="text-container">
+                <p>Hours</p>
+                <p>Minute</p>
+                <p>Seconds</p>
+            </div>
+            <!-- div btn-container will contains the button -->
+            <div class="btn-container">
+                <div class="start-btn">Start</div>
+                <div class="stop-btn">Stop</div>
+                <div class="reset-btn">Reset</div>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
